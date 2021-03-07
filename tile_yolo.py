@@ -156,7 +156,7 @@ if __name__ == "__main__":
     upfolder = os.path.join(args.source, '..' )
     target_upfolder = os.path.join(args.target, '..' )
     if not os.path.exists(os.path.join(upfolder, 'classes.names')):
-        raise Exception('classes.names should be located one level higher than images')
+        print('classes.names not found. It should be located one level higher than images')
     else:
         copyfile(os.path.join(upfolder, 'classes.names'), os.path.join(target_upfolder, 'classes.names'))
     

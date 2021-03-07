@@ -55,10 +55,8 @@ def tiler(imnames, newpath, falsepath, slice_size, ext):
                             sliced = imr[i*slice_size:(i+1)*slice_size, j*slice_size:(j+1)*slice_size]
                             sliced_im = Image.fromarray(sliced)
                             filename = imname.split('/')[-1]
-                            slice_path = newpath + "/" + filename.replace(ext, f'_{i}_{j}{ext}')
-                            
-                            slice_labels_path = newpath + "/" + filename.replace(ext, f'_{i}_{j}.txt')
-                            
+                            slice_path = newpath + "/" + filename.replace(ext, f'_{i}_{j}{ext}')                            
+                            slice_labels_path = newpath + "/" + filename.replace(ext, f'_{i}_{j}.txt')                            
                             print(slice_path)
                             sliced_im.save(slice_path)
                             imsaved = True                    

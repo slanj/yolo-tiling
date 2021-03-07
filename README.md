@@ -2,7 +2,7 @@
 
 ## Tile (slice) YOLO Dataset for Small Objects Detection
 
-This script can cut images and corresponding labels from YOLO dataset into tiles of specified size.
+This script can cut images and corresponding labels from YOLO dataset into tiles of specified size and create a new datased based on these tiles.
 
 ## Usage 
 
